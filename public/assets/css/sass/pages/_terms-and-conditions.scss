@@ -1,0 +1,25 @@
+.terms{
+    h2{
+        color: $blue;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    p{
+        color: #7D7D7D !important;
+        font-weight: normal !important;
+        font-size: 16px !important;
+    }
+    .terms__main-list{
+        span{
+            margin-#{$end}: 7px;
+        }
+        .terms__main-list__title{
+            color: #495057;
+            font-size: 20px;
+            font-weight: bold;
+            .terms__main-list__title__sub-list{
+                margin-#{$start}: 55px;
+            }
+        }
+    }
+}

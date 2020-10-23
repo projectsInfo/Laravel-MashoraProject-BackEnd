@@ -1,0 +1,162 @@
+// reset owl carousel styles for home page silder
+.slider .owl-carousel .owl-nav{
+    position: absolute;
+    top:45%;
+    width: 100%;
+}
+.slider .owl-carousel .owl-nav button.owl-prev,
+.slider .owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    color: #fff;
+    font-size: 35px;
+    transform: translateY(-50%);
+}
+.slider .owl-carousel .owl-nav button.owl-prev{
+    right:20px;
+}
+.slider .owl-carousel .owl-nav button.owl-next{
+    left:20px;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: transparent;
+}
+.slider .owl-theme .owl-dots{
+    position: absolute;
+    bottom: 30px;
+    z-index: 5;
+    width:100%;
+}
+
+// reset input styles
+label,legend{
+    font-size: 20px;
+    color: #1F2535;
+    user-select: none;
+    &.error{
+        color: red !important;
+        font-size: 14px;
+    }
+}
+.form-control{
+    border:1px solid #b9b4b4;
+    border-radius: 5px;
+    &::placeholder{
+        color:#B9B4B4;
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    &:focus{
+        box-shadow: 1px 0px 4px #CCC;
+        border: 1px solid #EEE;
+    }
+    &[type="file"]{
+        height: auto;
+        cursor: pointer;
+    }
+}
+
+input[type="radio"]{
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    background: #EEE;
+    box-shadow: 1px 1px 3px #EEE;
+    transition: 0.2s all linear;
+    &:focus, &:checked{
+        outline: none;
+        border: 6px solid #FFF;
+        background: red;
+        box-shadow: 0px 0px 2px #212529;
+    }
+    &:-internal-autofill-selected{
+        background-color: #FFF !important;
+    }
+
+}
+
+input[type="checkbox"]{
+    user-select: none;
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 1px solid #CCC;
+    &::after{
+        content: '';
+        display: none;
+        width: 5px;
+        height: 9px;
+        border: solid #000;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        z-index: 12;
+        position: absolute;
+        top:0;
+        left:3px;
+    }
+    &:checked{
+
+        &::after {
+            display: block;
+        }
+        // input[type="checkbox"]::after{
+        //     display: block;
+        // }
+
+    }
+
+}
+
+.select-input{
+    position: relative;
+    select{
+        appearance: none;
+        background-color: transparent;
+        &:focus{
+            background-color: transparent;
+            outline: none;
+        }
+        option{
+            color: #6c757d;
+        }
+    }
+    svg{
+        position: absolute;
+        top:20px;
+        transform: translateY(-50%);
+        #{$end}:10px;
+        font-size: 12px;
+        z-index: 1;
+        pointer-events: none !important;
+        color: #000;
+    }
+}
+
+// override datepicker style in jquery ui
+.ui-widget-header{
+    color: $mainColor;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 1px solid #cc8809;
+    background: #cc8809 !important;
+    color: #FFF;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+    background-color: #FFF;
+}
+.ui-state-default:hover, .ui-widget-content .ui-state-default:hover{
+    background-color:$mainColor;
+    color: #FFF;
+}
+.ui-state-active, .ui-widget-content .ui-state-active{
+    border: 1px solid #cccccc;
+    background: #cccccc;
+}
+.ui-datepicker{
+    width:14em;
+}
+

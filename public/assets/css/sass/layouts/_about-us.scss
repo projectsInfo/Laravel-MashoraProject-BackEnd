@@ -1,0 +1,46 @@
+// Start About us Section
+.about-us{
+    h5{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        @media #{$maxMobile}{
+            font-size: 18px;
+        }
+        @media (max-width:567px){
+            font-size: 14px;
+        }
+        span{
+            color: $mainColor;
+        }
+        svg{
+            padding-top: 3px;
+            color: $mainColor;
+            display: none;
+            @media(max-width: 567px){
+                display: inline-block;
+            }
+        }
+    }
+    .about-us__header{
+        @media (max-width:567px){
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    ul{
+        li{
+            line-height: 1.4;
+
+        }
+    }
+    .about-us__app{
+        margin-top: 10px;
+        img{
+            width: 100px;
+            border-radius: 7px;
+            margin-bottom: 15px;
+        }
+    }
+}

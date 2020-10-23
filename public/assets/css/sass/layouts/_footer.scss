@@ -1,0 +1,20 @@
+// Start footer
+.footer{
+    background-color: $mainColor;
+    .footer__socialmedia{
+        ul{
+            justify-content: flex-end;
+            @media #{$maxMobile}{
+                justify-content: center;
+                margin-top: 10px;
+            }
+            li{
+                svg{
+                    color: #000;
+                    font-size: 20px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}

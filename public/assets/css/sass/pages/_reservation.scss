@@ -1,0 +1,386 @@
+.lawyer-name-menu{
+    svg{
+        font-size: 18px !important;
+        margin-#{$end}: 15px;
+        color: $blue !important;
+    }
+    a:hover{
+        svg{
+        color: #FFF !important;
+        }
+    }
+}
+.lawyer-data{
+    position: relative;
+    .fixed-frame__up{
+        border-radius: 30px 30px 0 0;
+        overflow: hidden;
+        h3{
+            text-align: center;
+            background-color: $mainColor;
+            padding: 3px 0;
+            margin-bottom: 0;
+            color: #FFF;
+            font-size: 20px;
+        }
+        .lawyer-data__tabs{
+            padding: 10px;
+            border: 2px solid #D7D7D7;
+            @media #{$maxMobile}{
+                overflow-x: scroll;
+            }
+            .lawyer-data__tabs__link{
+                margin: 1px 10px 10px;
+                color: #000;
+                font-weight: bold;
+                font-size: 23px;
+                padding: 10px 17px;
+                box-shadow: 0px 2px 3px #CCC;
+                border:none;
+                &.active{
+                    box-shadow: none !important;
+                    color: $blue !important;
+                    border: none;
+                }
+                &:hover{
+                    border:none;
+                }
+                @media #{$maxMobile}{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .fixed-frame__down{
+        border-radius: 0 0 30px 30px;
+        margin-top: 40px;
+        border-bottom: 30px solid $mainColor;
+        & > div.tab-pane{
+            border: 1px solid #D7D7D7;
+            border-bottom: 0;
+            padding: 70px 15px 50px;
+            &.fixed-frame__down__reservation{
+                .fixed-frame__down__reservation__box{
+                    .fixed-frame__down__reservation__box__card{
+                        box-shadow: 0px 1px 3px #CCC;
+                        padding: 10px 12px;
+                        li{
+                            color: #000;
+                            font-size: 22px;
+                            font-weight: bold;
+                            span{
+                                color: $blue;
+                            }
+                            @media #{$maxMobile}{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                .fixed-frame__down__reservation__box__ans-btn{
+                    background: $red;
+                    color: #FFF;
+                    padding: 3px 35px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    margin-#{$end}:15px
+                }
+                .fixed-frame__down__reservation__box__prev-btn{
+                    background: $mainColor;
+                    color: #FFF;
+                    padding: 3px 12px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+            }
+            &.fixed-frame__down__credit{
+                .fixed-frame__down__credit__info{
+                    padding: 15px 0;
+                    li{
+                        color: #000;
+                        font-size: 22px;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                        span{
+                            color: $blue;
+                        }
+                    }
+                    .fixed-frame__down__credit__info__btn{
+                        background-color: $red;
+                        border: none;
+                        color: #FFF;
+                        padding: 7px 12px;
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                }
+                .reserve-statement{
+                    display: none;
+                    .reserve-statement__table{
+                        width: 90%;
+                        margin: auto;
+                        @media #{$maxMobile}{
+                            width: 100%;
+                        }
+                        .reserve-statement__table__head{
+                            tr{
+                                border-bottom: 0;
+                                th{
+                                    font-size: 14px;
+                                    padding: 10px 15px;
+                                    font-weight: normal;
+                                }
+
+                            }
+
+                        }
+                        .reserve-statement__table__body{
+                            tr{
+                                border-bottom: 1px solid #CCC;
+                                th,td{
+                                    font-size: 14px;
+                                    padding: 10px 15px;
+                                    color: #6c757d;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            &.fixed-frame__down__prev-consulting{
+                padding: 20px 15px 30px;
+                .fixed-frame__down__prev__consulting__box{
+                    box-shadow: 0px 1px 3px #CCC;
+                    padding: 10px 12px;
+                    margin-bottom: 20px;
+                    li{
+                        color: #000;
+                        font-size: 22px;
+                        font-weight: bold;
+                        span{
+                            color: $blue;
+                        }
+                        @media #{$maxMobile}{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            &.fixed-frame__down__personal-data{
+                .fixed-frame__down__personal-data__body{
+                    color: #FFF;
+                    border-radius: 25px;
+                    overflow: hidden;
+                    border: 1px solid #D7D7D7;
+                    border-top:0;
+                    h4{
+                        font-size: 20px;
+                        text-align: center;
+                        margin-bottom: 0;
+                        padding: 6px;
+                        background-color: #081846;
+                    }
+                    .fixed-frame__down__personal-data__list{
+                        padding: 40px 7px 20px;
+                        @media #{$maxMobile} {
+                            padding: 20px 7px;
+                        }
+                        .fixed-frame__down__personal-data__list__link{
+                            color: #1F2535;
+                            font-weight: bold;
+                            font-size: 23px;
+                            padding: 10px 17px;
+                            box-shadow: 0px 1px 3px #CCC;
+                            border: none;
+                            background-color: #FFF;
+                            margin: 6px 0;
+                            border-radius: 0;
+                            line-height: 100%;
+                            &.active{
+                                color: $blue;
+                                box-shadow: none;
+                            }
+                            svg{
+                                color: $mainColor;
+                                margin-#{$end}: 15px;
+                                transform: rotateY(180deg);
+                                @media #{$maxMobile} {
+                                    margin-#{$end}:6px;
+                                }
+                            }
+                            @media #{$maxSmall}{
+                                font-size:18px;
+                            }
+                            @media #{$maxMobile}{
+                                padding:7px 10px;
+                            }
+                        }
+                    }
+                    .fixed-frame__down__personal-data__info{
+                        padding:20px;
+                        .fixed-frame__down__personal-data__info__tab{
+                            .fixed-frame__down__personal-data__info__tab__photo{
+                                width: 150px;
+                                margin: 0 auto 20px;
+                                border: 1px solid #CACACA;
+                                border-radius: 10px;
+                                position: relative;
+                                height: 150px;
+                                overflow: hidden;
+                                &:hover{
+                                    cursor: pointer;
+                                    .fixed-frame__down__personal-data__info__tab__photo__change{
+                                        transform: translateY(-100%);
+                                        transition: all 0.5s ease-in-out;
+                                    }
+                                }
+                                img{
+                                    width:100%;
+                                    height: 100%;
+                                }
+                                .fixed-frame__down__personal-data__info__tab__photo__change{
+                                    position: relative;
+                                    z-index: 2;
+                                    background-color: rgba($mainColor, 0.7);
+                                    color: #FFF;
+                                    text-align: center;
+
+                                    p{
+                                        padding:7px 10px;
+                                    }
+                                    .fixed-frame__down__personal-data__info__tab__photo__change__input{
+                                        position: absolute;
+                                        top:0;
+                                        left:0;
+                                        right: 0;
+                                        bottom: 0;
+                                        width:100%;
+                                        height: 100%;
+                                        opacity: 0;
+                                    }
+                                }
+                            }
+                            .input-icon{
+                                svg{
+                                    position: absolute;
+                                    top:10px;
+                                    #{$end}:10px;
+                                    color: #CCC;
+                                    z-index: 1;
+                                    cursor: pointer;
+                                    &:hover{
+                                        color: #6c757d;
+                                        transition: all 0.5s ease-in-out;
+                                    }
+                                }
+                            }
+                            .save-edit-btn{
+                                margin-top: 20px;
+                                .edit-btn{
+                                    background-color: $blue;
+                                    border: none;
+                                    color: #fff;
+                                    padding: 2px 15px;
+                                    border-radius: 5px;
+                                    margin-#{$end}:20px ;
+                                }
+                                .save-btn{
+                                    background-color: $red;
+                                    border: none;
+                                    color: #fff;
+                                    padding: 2px 15px;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .fixed-frame__down__personal-data__change-photo{
+                    position: relative;
+                    padding: 10px 15px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    background-color: #1F2535;
+                    color: #FFF;
+                    margin-top: 15px;
+                    border-radius: 12px;
+                    text-align: center;
+                    input{
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        right: 0;
+                        bottom: 0;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 1;
+                        opacity: 0;
+                    }
+                }
+            }
+            &.fixed-frame__down__service{
+                position: relative;
+                h5{
+                    color: $blue;
+                    font-size: 25px;
+                    font-weight: bold;
+                    margin-bottom: 25px;
+                }
+                .fixed-frame__down__service__message{
+                    button{
+                        border: none;
+                        background: $red;
+                        padding: 3px 15px;
+                        color: #FFF;
+                        font-size: 22px;
+                    }
+                }
+                .fixed-frame__down__service__call{
+                    p{
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+                    .fixed-frame__down__service__call__social{
+                        li{
+                            a{
+                                font-size: 25px;
+                                .fa-facebook-f{
+                                    color: #0937B4;
+                                }
+                                .fa-twitter{
+                                    color: #486ED6;
+                                }
+                                .fa-instagram{
+                                    color: #D96438;
+                                }
+                            }
+                        }
+                    }
+                }
+                .solutions__contain__divide{
+                    position: absolute;
+                    width:1px;
+                    height: 80%;
+                    #{$end}:50%;
+                    background-color: #b9b4b4;
+                    top: 50%;
+                    bottom: 0;
+                    z-index: 2;
+                    transform: translateY(-50%);
+                    .solutions__contain__divide__column{
+                        width:100%;
+                        height: 70%;
+                        position: relative;
+                    }
+                }
+            }
+
+        }
+    }
+}
+

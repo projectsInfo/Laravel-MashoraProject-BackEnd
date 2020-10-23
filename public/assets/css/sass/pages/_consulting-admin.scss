@@ -1,0 +1,55 @@
+.consult-details{
+    position: relative;
+    .consult-details__fixed-frame__up{
+        border-radius: 30px 30px 0 0;
+        overflow: hidden;
+        h3{
+            text-align: center;
+            background-color: $mainColor;
+            padding: 3px 0;
+            margin-bottom: 0;
+            color: #FFF;
+            font-size: 20px;
+        }
+        .consult-details__fixed-frame__up__p{
+            padding: 10px;
+            border: 1px solid #D7D7D7;
+            p{
+                font-size: 35px;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .consult-details__fixed-frame__down{
+        border-radius: 0 0 30px 30px;
+        margin-top: 40px;
+        padding: 25px;
+        border: 1px solid #D7D7D7;
+        border-bottom: 30px solid $mainColor;
+        .consult-details__fixed-frame__down__table{
+            .consult-details__fixed-frame__down__table__head{
+                 border-bottom: 20px solid #fff;
+                 th{
+                     font-size: 22px;
+                 }
+            }
+            .consult-details__fixed-frame__down__table__body{
+                  border-top: 10px solid #fff;
+                  .lawyer__grade{
+                    margin-bottom: 10px;
+                    svg{
+                        font-size: 10px;
+                        &.lawyer__grade__empty{
+                            color:$blue;
+                        }
+                        &.lawyer__grade__full{
+                            color: $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,63 @@
+.lawyer-data .fixed-frame-up .lawyer-data__tabs {
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lawyer-data .fixed-frame-up .lawyer-data__tabs .lawyer-data__tabs__link {
+  margin: 0 5px;
+  -webkit-box-shadow: 0px 1px 3px #CCC;
+          box-shadow: 0px 1px 3px #CCC;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+
+.lawyer-data .fixed-frame-up .lawyer-data__tabs .lawyer-data__tabs__link.active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: #072577 !important;
+  border: none;
+}
+
+.lawyer-data .lawyer-data__content {
+  border-radius: 0 0 20px 20px;
+  border: 1px solid #CCC;
+  margin-top: 20px;
+  background: #cc8809;
+  padding-bottom: 25px;
+}
+
+.lawyer-data .lawyer-data__content .lawyer-data__content__reservation {
+  background-color: #FFF;
+}
+
+.lawyer-data .lawyer-data__content .lawyer-data__content__reservation .lawyer-data__content__reservation__box .lawyer-data__content__reservation__box__card {
+  -webkit-box-shadow: 0px 1px 3px #CCC;
+          box-shadow: 0px 1px 3px #CCC;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.lawyer-data .lawyer-data__content .lawyer-data__content__reservation .lawyer-data__content__reservation__box .lawyer-data__content__reservation__box__card li {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lawyer-data .lawyer-data__content .lawyer-data__content__reservation .lawyer-data__content__reservation__box .lawyer-data__content__reservation__box__card li span {
+  color: #072577;
+}
+
+.lawyer-data .lawyer-data__content .lawyer-data__content__reservation .lawyer-data__content__reservation__box .lawyer-data__content__reservation__box__ans-btn {
+  background: #E40303;
+  color: #FFF;
+  padding: 6px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=reservation.css.map */

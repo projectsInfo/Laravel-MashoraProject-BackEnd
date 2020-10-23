@@ -1,0 +1,186 @@
+.user-search{
+
+
+    .our-lawyers{
+        padding: 50px 40px;
+        .user-search__check{
+            @media #{$maxMobile}{
+                position: fixed;
+                z-index: 5;
+                top: 100px;
+                height: 100vh;
+                width: 200px;
+                right:-200px
+
+            }
+            h3{
+                font-size: 18px;
+                background-color: $mainColor;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                margin-bottom: 0;
+                border-radius: 25px 25px 0 0;
+                svg{
+                    font-size: 30px;
+                }
+            }
+            .user-search__check__side{
+                border: 1px solid #CCC;
+                border-top: 0;
+                background-color: #FFF;
+                position: relative;
+                .show-side-control{
+                    position: absolute;
+                    z-index: 6;
+                    left: -35px;
+                    top: 60px;
+                    color: #f8f9fa;
+                    cursor: pointer;
+                    display: none;
+                    background: $mainColor;
+                    padding: 2px 9px;
+                    border-radius: 10px 0 0 10px;
+                    @media #{$maxMobile} {
+                        display:block;
+                    }
+                }
+                .user-search__check__side__hold{
+                    border-bottom: 1px solid #EEE;
+                    padding:15px;
+                    .user-search__check__side__hold__head{
+                        position: relative;
+                        cursor: pointer;
+                        &:after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            bottom: 0;
+                            width: 15px;
+                            height: 1px;
+                            #{$start}: 2px;
+                            background-color: $mainColor;
+                        }
+                        h5{
+                            font-size: 16px;
+                            font-weight: bold;
+
+                            svg{
+                                color: $blue;
+                                position: relative;
+                                margin-#{$end}: 7px;
+                            }
+                        }
+                        .user-search__check__side__hold__head__icon-down{
+                            position: absolute;
+                            top:50%;
+                            transform: translateY(-50%);
+                            #{$end}:5px;
+                            font-size: 14px;
+                        }
+                    }
+                    .user-search__check__side__hold__box{
+                        label{
+                            font-size: 15px;
+                            color: #343a40;
+                        }
+                    }
+                }
+            }
+        }
+        .our-lawyers__breadcrumb{
+            .our-lawyers__breadcrumb__link{
+                color: #343a40;
+                font-weight: bold;
+            }
+        }
+        .our-lawyers__card{
+            .card{
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0px 0px 4px #dee2e6;
+                .card-img{
+                    height: 210px;
+                    .card-img-top{
+                        height: 100%;
+                    }
+                }
+                .our-lawyers__card__body{
+
+                    text-align: center;
+                    padding: 10px 20px;
+                    .our-lawyers__card__body__title{
+                        color: $blue;
+                        font-size: 11px;
+                        font-weight: bold;
+                        margin-bottom: 3px;
+                    }
+                    .our-lawyers__card__body__text{
+                        color: gray;
+                        font-size: 10px;
+                        margin-bottom: 0;
+                    }
+                    .our-lawyers__card__body__grade{
+                        svg{
+                            font-size: 10px;
+                            &.our-lawyers__card__body__grade__empty{
+                                color:$blue;
+                            }
+                            &.our-lawyers__card__body__grade__full{
+                                color: $mainColor;
+                            }
+                        }
+                    }
+                    .our-lawyers__card__body__reserve-details{
+                        p{
+                            color:gray;
+                            font-size: 10px;
+                            margin-bottom: 4px;
+                            svg.price{
+                                color: green;
+                            }
+                            svg.time{
+                                color: $red;
+                            }
+                        }
+                    }
+                    .our-lawyers__card__body__social{
+                        svg{
+                            margin:0 5px
+                        }
+                    }
+                }
+                .our-lawyers__card__overlay{
+                    background-color: $mainColor;
+                    padding: 10px 15px;
+                    position: absolute;
+                    bottom: -44px;
+                    left:0;
+                    right:0;
+                    z-index: 3;
+                    transition: all 0.5s ease-in-out;
+                    a{
+                    background-color: #fff;
+                    padding: 5px 10px;
+                    font-size: 11px;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    }
+                    .our-lawyers__card__overlay__info{
+                        color: $blue;
+                        margin-#{$end}:10px;
+                    }
+                    .our-lawyers__card__overlay__reverse{
+                        color: $red;
+                    }
+                }
+                &:hover{
+                    .our-lawyers__card__overlay{
+                        bottom: 0;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import 'sass/abstract/variables';
+@import 'sass/abstract/mixin';
+
+@import 'sass/base/typography';
+
+@import 'sass/base/base';
+@import 'sass/base/reset';
+
+@import 'sass/components/fixed';
+@import 'sass/components/placeholder';
+
+@import 'sass/layouts/header';
+@import 'sass/layouts/hero-img';
+@import 'sass/pages/homepage';
+@import 'sass/pages/userpage';
+@import 'sass/pages/reservation';
+@import 'sass/pages/chat';
+@import 'sass/pages/terms-and-conditions';
+@import 'sass/pages/user-search-page';
+@import 'sass/pages/lawyer-profile';
+@import 'sass/pages/consultingpage';
+@import 'sass/pages/payment-methods';
+@import 'sass/pages/admin-page';
+@import 'sass/pages/consulting-admin';
+@import 'sass/layouts/about-us';
+@import 'sass/layouts/footer';
+
